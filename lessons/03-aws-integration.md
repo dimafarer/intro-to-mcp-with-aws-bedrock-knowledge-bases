@@ -60,6 +60,7 @@ python tests/test_mcp_protocol.py
 ## Code Deep Dive
 
 📖 **[AWS Integration Explained](../explanations/aws-integration-explained.md)** - Line-by-line breakdown of Bedrock integration
+📖 **[MCP Protocol Test Explained](../explanations/test_mcp_protocol-explained.md)** - Why our original test failed and how to fix it
 
 ### Key Implementation Points
 
