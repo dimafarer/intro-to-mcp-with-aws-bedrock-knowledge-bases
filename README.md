@@ -62,8 +62,8 @@ git checkout phase-2-complete
 
 **Files**: `examples/phase-1-foundation/` or `git checkout phase-1-complete`
 
-### Phase 2: AWS Integration 🔄
-**Status**: In Development
+### Phase 2: AWS Integration ✅
+**Status**: Complete
 - Connect to Bedrock Knowledge Base
 - Real query implementation
 - Response formatting
@@ -94,7 +94,7 @@ git checkout phase-2-complete
 mcp-bedrock-kb/
 ├── examples/                      # Complete phase examples
 │   ├── phase-1-foundation/       # Standalone working example
-│   └── phase-2-aws-integration/  # Coming soon
+│   └── phase-2-aws-integration/  # AWS Bedrock KB integration
 ├── src/                          # Current development
 ├── lessons/                      # Step-by-step tutorials
 │   ├── 01-mcp-basics.md
