@@ -14,11 +14,19 @@ Create an MCP server to interface with AWS Bedrock Knowledge Base for querying A
 - ✅ Build minimal MCP server skeleton
 - ✅ Initialize git repository with milestones
 - ✅ Create virtual environment
-- [ ] Test basic MCP protocol communication
+- ✅ Test basic MCP protocol communication
+- ✅ Create comprehensive educational documentation
 
-**Git Milestone**: `515d096` - Project setup with MCP server skeleton
+**Git Milestones**: 
+- `515d096` - Project setup with MCP server skeleton
+- `51444e3` - Working MCP server with comprehensive educational content
 
-## Phase 2: AWS Integration
+## Phase 2: AWS Integration (CURRENT)
+- [ ] Connect to Bedrock Knowledge Base (ID: QVBQZMYI7R)
+- [ ] Implement real query functionality
+- [ ] Add response formatting
+- [ ] Test with sample Strands Agent queries
+- [ ] Create lesson 3 with AWS integration details
 - [ ] Connect to Bedrock Knowledge Base
 - [ ] Implement query functionality
 - [ ] Add response formatting
