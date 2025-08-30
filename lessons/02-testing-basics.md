@@ -60,8 +60,8 @@ async def handle_call_tool(name: str, arguments: dict) -> list[types.TextContent
 
 For new programmers, we've created detailed explanations:
 
-📖 **[Server Code Explained](./server-explained.md)** - Line-by-line breakdown of our MCP server
-📖 **[Test Code Explained](./test-explained.md)** - Understanding subprocess communication and JSON-RPC
+📖 **[Server Code Explained](../explanations/server-explained.md)** - Line-by-line breakdown of our MCP server
+📖 **[Test Code Explained](../explanations/test-explained.md)** - Understanding subprocess communication and JSON-RPC
 
 ### Key Learning Points
 

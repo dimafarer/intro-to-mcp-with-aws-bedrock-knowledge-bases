@@ -39,7 +39,7 @@ cd mcp-bedrock-kb
 
 # Start with Phase 1
 git checkout phase-1-complete
-# Follow lesson-01-mcp-basics.md
+# Follow lessons/01-mcp-basics.md
 
 # Later, move to Phase 2
 git checkout phase-2-complete
@@ -92,13 +92,23 @@ git checkout phase-2-complete
 ## 📋 Project Structure
 ```
 mcp-bedrock-kb/
-├── examples/                   # Complete phase examples
-│   ├── phase-1-foundation/    # Standalone working example
-│   └── phase-2-aws-integration/
-├── src/                       # Current development
-├── lessons/                   # Step-by-step tutorials
-├── *-explained.md            # Detailed code explanations
-└── implementation-plan.md    # Development roadmap
+├── examples/                      # Complete phase examples
+│   ├── phase-1-foundation/       # Standalone working example
+│   └── phase-2-aws-integration/  # Coming soon
+├── src/                          # Current development
+├── lessons/                      # Step-by-step tutorials
+│   ├── 01-mcp-basics.md
+│   ├── 02-testing-basics.md
+│   └── 03-aws-integration.md
+├── explanations/                 # Detailed code explanations
+│   ├── server-explained.md
+│   ├── test-explained.md
+│   └── aws-integration-explained.md
+├── tests/                        # Test files
+│   ├── test_basic.py            # Phase 1 reference
+│   └── test_mcp_protocol.py     # Current working test
+├── README.md                     # This file
+└── implementation-plan.md        # Development roadmap
 ```
 
 ## 🎓 Educational Features
