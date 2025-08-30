@@ -71,12 +71,23 @@ git checkout phase-2-complete
 
 **Files**: `examples/phase-2-aws-integration/` or `git checkout phase-2-complete`
 
-### Phase 3: Advanced Features 📋
-**Status**: Planned
-- Error handling and resilience
-- Performance optimization
-- Multiple knowledge bases
-- Production deployment
+### Phase 3: Q CLI Integration ✅
+**Status**: Complete
+- Configure MCP server for Q CLI
+- Virtual environment dependency management
+- Integration testing and validation
+- Troubleshooting common issues
+
+**Files**: `examples/phase-3-q-cli-integration/` or `git checkout phase-3-complete`
+
+### Phase 4: Q Developer Integration 🔄
+**Status**: In Development
+- Configure MCP server for Q Developer (IDE)
+- VS Code integration setup
+- Development workflow enhancement
+- Advanced IDE features
+
+**Files**: `examples/phase-4-q-developer-integration/` or `git checkout phase-4-complete`
 
 ## 🛠️ Prerequisites
 - Python 3.8+
@@ -94,7 +105,8 @@ git checkout phase-2-complete
 mcp-bedrock-kb/
 ├── examples/                      # Complete phase examples
 │   ├── phase-1-foundation/       # Standalone working example
-│   └── phase-2-aws-integration/  # AWS Bedrock KB integration
+│   ├── phase-2-aws-integration/  # AWS Bedrock KB integration
+│   └── phase-3-q-cli-integration/ # Q CLI MCP server setup
 ├── src/                          # Current development
 ├── lessons/                      # Step-by-step tutorials
 │   ├── 01-mcp-basics.md

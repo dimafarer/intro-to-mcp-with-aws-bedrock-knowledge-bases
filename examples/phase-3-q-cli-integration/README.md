@@ -1,0 +1,87 @@
+# Phase 3: Q CLI Integration - Complete Example
+
+This folder contains a complete, working implementation of Phase 3: Q CLI Integration with MCP server.
+
+## What You'll Learn
+- Configure MCP servers for Q CLI integration
+- Handle virtual environment dependencies correctly
+- Test end-to-end integration with Q CLI
+- Troubleshoot common integration issues
+
+## Prerequisites
+- Completed Phase 2 (AWS Bedrock integration working)
+- Q CLI installed and configured
+- Understanding of virtual environments
+
+## Files Included
+- `src/mcp_bedrock_kb/server.py` - Complete MCP server with AWS integration
+- `tests/test_q_cli_integration.py` - Q CLI integration validation
+- `tests/test_mcp_protocol.py` - MCP protocol compliance test
+- `requirements.txt` - Dependencies
+- `lessons/` - Step-by-step tutorials (01, 02, 03, 04)
+- `explanations/` - Detailed concept explanations
+
+## Quick Start
+```bash
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate  # Linux/Mac
+# venv\Scripts\activate   # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Get full path to your venv Python
+which python
+# Example output: /path/to/your/project/venv/bin/python
+
+# Configure MCP server for Q CLI (use YOUR path)
+q mcp add --name bedrock-kb \
+  --command /path/to/your/project/venv/bin/python \
+  --args "src/mcp_bedrock_kb/server.py" \
+  --force
+
+# Verify configuration
+q mcp list
+q mcp status --name bedrock-kb
+
+# Test integration
+python tests/test_q_cli_integration.py
+```
+
+## Learning Path
+1. **Review Previous Phases**: Lessons 01-03 for foundation
+2. **Q CLI Integration**: `lessons/04-q-cli-integration.md`
+3. **Integration Concepts**: `explanations/q-cli-integration-explained.md`
+4. **Test Setup**: Run integration tests
+5. **Live Testing**: Use Q CLI with your enhanced knowledge base
+
+## Testing Your Integration
+```bash
+# Start Q CLI chat
+q chat
+
+# Try these queries:
+# "What tools do you have available?"
+# "What is AWS Strands Agent framework?"
+# "How do I create a Strands agent?"
+```
+
+## What's Working
+✅ **Q CLI Registration**: MCP server properly configured
+✅ **Virtual Environment**: Correct Python interpreter with dependencies
+✅ **Tool Discovery**: Q CLI finds your `query_strands_docs` tool
+✅ **End-to-End**: Real queries enhanced with Strands documentation
+✅ **Error Handling**: Graceful AWS and integration error handling
+
+## Troubleshooting
+- **Server not starting**: Check virtual environment Python path
+- **Tools not available**: Verify MCP protocol compliance
+- **AWS errors**: Ensure credentials and permissions are correct
+- **Timeout issues**: Consider increasing server timeout
+
+## Next Phase
+After mastering Q CLI integration, proceed to Phase 4: Q Developer Integration for IDE-based AI assistance.
+
+---
+*Your MCP server now enhances Q CLI with custom knowledge base queries!*
