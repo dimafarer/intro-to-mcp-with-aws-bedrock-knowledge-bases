@@ -118,7 +118,13 @@ mcp-bedrock-kb/
 │   └── aws-integration-explained.md
 ├── tests/                        # Test files
 │   ├── test_basic.py            # Phase 1 reference
-│   └── test_mcp_protocol.py     # Current working test
+│   ├── test_mcp_protocol.py     # Current working test
+│   ├── test_q_cli_integration.py # Q CLI integration test
+│   └── comparative-testing/     # Knowledge base value demonstration
+│       ├── development-task-test.md
+│       ├── implementation_with_kb.py
+│       ├── implementation_without_kb.py
+│       └── comparative-analysis.md
 ├── README.md                     # This file
 └── implementation-plan.md        # Development roadmap
 ```

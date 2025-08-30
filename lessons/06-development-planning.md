@@ -87,12 +87,32 @@ Challenge: Implement both local and cloud session storage options
 ## Understanding the Discovery Process
 
 📖 **[Development Planning Explained](../explanations/development-planning-explained.md)** - Deep dive into knowledge discovery methodology and comparative testing
+📖 **[Comparative Testing Explained](../explanations/comparative-testing-explained.md)** - Step-by-step process for conducting evidence-based comparisons
 
 ### Key Concepts
 - **Knowledge Gap Analysis**: Identifying what's new vs general AI knowledge
 - **Systematic Querying**: From broad exploration to specific technical details
 - **Task Synthesis**: Transforming discoveries into development challenges
 - **Comparative Testing**: Measuring knowledge base value through implementation
+- **Evidence-Based ROI**: Quantifying the benefits of domain-specific knowledge
+
+### The Discovery Process
+
+**Initial Query**: "How does Strands agent session management work?"
+
+**Key Discoveries**:
+- Session persistence is automatic, triggered by specific events
+- Two built-in session managers: `FileSessionManager` and `S3SessionManager`
+- Sessions include conversation history, agent state, and other stateful information
+- Specific API pattern: `Agent(session_manager=session_manager)`
+
+**Why This is Valuable**:
+- These specific class names wouldn't be in general AI training
+- The automatic persistence concept is framework-specific
+- The exact import statements and usage patterns are documented
+- Error handling and best practices are included
+
+## Real Example: Session Management Discovery
 
 ### The Discovery Process
 
@@ -120,6 +140,8 @@ Build a Python script demonstrating persistent conversation handling for Strands
 - Tests understanding of session management concepts
 - Validates correct usage of framework-specific patterns
 - Demonstrates practical application of discovered knowledge
+
+**Complete Example**: See `tests/comparative-testing/` for full implementation comparison and analysis.
 
 ## Expected Learning Outcomes
 
