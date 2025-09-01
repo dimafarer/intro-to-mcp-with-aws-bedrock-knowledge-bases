@@ -22,7 +22,14 @@ This folder contains a complete, working implementation of Phase 3: Q CLI Integr
 - `explanations/` - Detailed concept explanations
 
 ## Quick Start
+**Prerequisites**: Ensure your AWS credentials and region are configured in `~/.aws/credentials` and `~/.aws/config`
+
 ```bash
+# Edit configuration with your Knowledge Base ID and Model ARN
+nano src/mcp_bedrock_kb/server.py
+# Update line 19: KNOWLEDGE_BASE_ID = "YOUR_KNOWLEDGE_BASE_ID"
+# Update line 77: 'modelArn': 'arn:aws:bedrock:YOUR_REGION::foundation-model/YOUR_MODEL_ID'
+
 # Create virtual environment
 python3 -m venv venv
 source venv/bin/activate  # Linux/Mac
