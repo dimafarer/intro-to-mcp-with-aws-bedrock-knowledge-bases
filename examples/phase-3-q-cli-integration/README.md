@@ -33,11 +33,10 @@ nano src/mcp_bedrock_kb/server.py
 # Update line 19: KNOWLEDGE_BASE_ID = "YOUR_KNOWLEDGE_BASE_ID_HERE"
 # Update line 74: 'modelArn': 'arn:aws:bedrock:YOUR_REGION::foundation-model/YOUR_MODEL_ID'
 
-# Verify virtual environment exists (should already be created)
-ls -la venv/bin/python
-# Should show: venv/bin/python -> python3
+# Create virtual environment
+python3 -m venv venv
 
-# Install dependencies if needed
+# Activate virtual environment and install dependencies
 source venv/bin/activate
 pip install -r requirements.txt
 deactivate
