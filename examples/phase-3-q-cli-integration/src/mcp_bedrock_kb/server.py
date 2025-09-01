@@ -16,7 +16,7 @@ import json
 
 
 # Configuration
-KNOWLEDGE_BASE_ID = "QVBQZMYI7R"
+KNOWLEDGE_BASE_ID = "YOUR_KNOWLEDGE_BASE_ID_HERE"
 
 # Create server instance
 server = Server("bedrock-kb")
