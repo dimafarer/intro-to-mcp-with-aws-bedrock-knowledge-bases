@@ -26,7 +26,7 @@ This folder contains a complete, working implementation of Phase 3: Q CLI Integr
 
 ```bash
 # Navigate to the main project directory (NOT the examples folder)
-cd /home/daddyfristy/mcpservers/intro-to-mcp-with-aws-bedrock-knowledge-bases
+cd /path/to/intro-to-mcp-with-aws-bedrock-knowledge-bases
 
 # Edit configuration with your Knowledge Base ID and Model ARN
 nano src/mcp_bedrock_kb/server.py
@@ -44,8 +44,8 @@ deactivate
 
 # Configure MCP server for Q CLI (using correct main project paths)
 q mcp add --name bedrock-kb \
-  --command /home/daddyfristy/mcpservers/intro-to-mcp-with-aws-bedrock-knowledge-bases/venv/bin/python \
-  --args "/home/daddyfristy/mcpservers/intro-to-mcp-with-aws-bedrock-knowledge-bases/src/mcp_bedrock_kb/server.py" \
+  --command /path/to/intro-to-mcp-with-aws-bedrock-knowledge-bases/venv/bin/python \
+  --args "/path/to/intro-to-mcp-with-aws-bedrock-knowledge-bases/src/mcp_bedrock_kb/server.py" \
   --force
 
 # Verify configuration
@@ -53,7 +53,7 @@ q mcp list
 q mcp status --name bedrock-kb
 
 # Test integration
-cd /home/daddyfristy/mcpservers/intro-to-mcp-with-aws-bedrock-knowledge-bases
+cd /path/to/intro-to-mcp-with-aws-bedrock-knowledge-bases
 python tests/test_q_cli_integration.py
 ```
 
