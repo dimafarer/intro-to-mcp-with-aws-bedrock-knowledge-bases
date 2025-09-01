@@ -16,8 +16,7 @@ import json
 
 
 # Configuration
-KNOWLEDGE_BASE_ID = "QVBQZMYI7R"
-AWS_REGION = "us-west-2"
+KNOWLEDGE_BASE_ID = "YOUR_KNOWLEDGE_BASE_ID_HERE"
 
 # Create server instance
 server = Server("bedrock-kb")
@@ -61,10 +60,7 @@ async def query_knowledge_base(query: str) -> list[types.TextContent]:
     
     try:
         # Create Bedrock client
-        bedrock_client = boto3.client(
-            'bedrock-agent-runtime',
-            region_name=AWS_REGION
-        )
+        bedrock_client = boto3.client('bedrock-agent-runtime')
         
         # Query the knowledge base
         response = bedrock_client.retrieve_and_generate(
@@ -75,7 +71,7 @@ async def query_knowledge_base(query: str) -> list[types.TextContent]:
                 'type': 'KNOWLEDGE_BASE',
                 'knowledgeBaseConfiguration': {
                     'knowledgeBaseId': KNOWLEDGE_BASE_ID,
-                    'modelArn': 'arn:aws:bedrock:us-west-2::foundation-model/anthropic.claude-3-sonnet-20240229-v1:0'
+                    'modelArn': 'arn:aws:bedrock:{YOUR_REGION}::foundation-model/{YOUR_MODEL_ID}'
                 }
             }
         )
