@@ -25,27 +25,27 @@ This folder contains a complete, working implementation of Phase 3: Q CLI Integr
 **Prerequisites**: Ensure your AWS credentials and region are configured in `~/.aws/credentials` and `~/.aws/config`
 
 ```bash
+# Navigate to the main project directory (NOT the examples folder)
+cd /home/daddyfristy/mcpservers/intro-to-mcp-with-aws-bedrock-knowledge-bases
+
 # Edit configuration with your Knowledge Base ID and Model ARN
 nano src/mcp_bedrock_kb/server.py
 # Update line 19: KNOWLEDGE_BASE_ID = "YOUR_KNOWLEDGE_BASE_ID_HERE"
-# Update line 77: 'modelArn': 'arn:aws:bedrock:YOUR_REGION::foundation-model/YOUR_MODEL_ID'
+# Update line 74: 'modelArn': 'arn:aws:bedrock:YOUR_REGION::foundation-model/YOUR_MODEL_ID'
 
-# Create virtual environment
-python3 -m venv venv
-source venv/bin/activate  # Linux/Mac
-# venv\Scripts\activate   # Windows
+# Verify virtual environment exists (should already be created)
+ls -la venv/bin/python
+# Should show: venv/bin/python -> python3
 
-# Install dependencies
+# Install dependencies if needed
+source venv/bin/activate
 pip install -r requirements.txt
+deactivate
 
-# Get full path to your venv Python
-which python
-# Example output: /path/to/your/project/venv/bin/python
-
-# Configure MCP server for Q CLI (use YOUR path)
+# Configure MCP server for Q CLI (using correct main project paths)
 q mcp add --name bedrock-kb \
-  --command /path/to/your/project/venv/bin/python \
-  --args "src/mcp_bedrock_kb/server.py" \
+  --command /home/daddyfristy/mcpservers/intro-to-mcp-with-aws-bedrock-knowledge-bases/venv/bin/python \
+  --args "/home/daddyfristy/mcpservers/intro-to-mcp-with-aws-bedrock-knowledge-bases/src/mcp_bedrock_kb/server.py" \
   --force
 
 # Verify configuration
@@ -53,6 +53,7 @@ q mcp list
 q mcp status --name bedrock-kb
 
 # Test integration
+cd /home/daddyfristy/mcpservers/intro-to-mcp-with-aws-bedrock-knowledge-bases
 python tests/test_q_cli_integration.py
 ```
 

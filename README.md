@@ -1,6 +1,18 @@
-# MCP Bedrock Knowledge Base Server - Learning Guide
+# MCP Bedrock Knowledge Base Server
 
-Learn to build MCP (Model Context Protocol) servers that connect to AWS Bedrock Knowledge Base for enhanced AI assistance.
+Connect your AI assistants (Q CLI, Q Developer) to AWS Bedrock Knowledge Bases using Model Context Protocol (MCP).
+
+## 🚀 Quick Installation (Ready to Use)
+
+**Want to use the MCP server right now?** 
+
+👉 **[Go to Phase 3 Quick Start Instructions](examples/phase-3-q-cli-integration/README.md#quick-start)** 👈
+
+This will get your MCP server running with Q CLI and Q Developer in minutes.
+
+## 📚 Learning Path (Build Your Own)
+
+**Want to learn how MCP servers work?** This project teaches you step-by-step:
 
 ## 🎯 Learning Objectives
 1. Understand MCP server fundamentals

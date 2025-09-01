@@ -16,7 +16,7 @@ import json
 
 
 # Configuration
-KNOWLEDGE_BASE_ID = "YOUR_KNOWLEDGE_BASE_ID_HERE"
+KNOWLEDGE_BASE_ID = "BCLN5M0XZW"
 
 # Create server instance
 server = Server("bedrock-kb")
@@ -71,7 +71,7 @@ async def query_knowledge_base(query: str) -> list[types.TextContent]:
                 'type': 'KNOWLEDGE_BASE',
                 'knowledgeBaseConfiguration': {
                     'knowledgeBaseId': KNOWLEDGE_BASE_ID,
-                    'modelArn': 'arn:aws:bedrock:{YOUR_REGION}::foundation-model/{YOUR_MODEL_ID}'
+                    'modelArn': 'arn:aws:bedrock:us-west-2:766410526940:inference-profile/us.anthropic.claude-sonnet-4-20250514-v1:0'
                 }
             }
         )
